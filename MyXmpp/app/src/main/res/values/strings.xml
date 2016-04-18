@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Xmpp</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="login">Login</string>
+    <string name="userID">UserName</string>
+    <string name="Enter_your_userID">username</string>
+    <string name="password">PassWord</string>
+    <string name="Enter_your_password">password</string>
+    <string name="username_password_is_empty">username or password can\'t be empty</string>
+    <string name="success">success</string>
+    <string name="fail">fail</string>
+    <string name="signup">SIGNUP</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="session">消息</string>
+    <string name="contacts">联系人</string>
+    <string name="action_settings">添加联系人</string>
+</resources>

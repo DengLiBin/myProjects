@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_alignParentTop="true"
+    android:layout_height="50dp">
+    <!--背景-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@mipmap/img_buttom_bg_left"/>
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/img_buttom_bg_right"/>
+    </LinearLayout>
+
+    <!--按钮-->
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/ib_top_play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/top_btn_bg_slector"/>
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/img_buttom_bt_play"/>
+        </RelativeLayout>
+         <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+             <!--层叠效果放在相对或帧布局中-->
+            <ImageButton
+                android:id="@+id/ib_top_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/top_btn_bg_slector"/>
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/img_buttom_bt_list"/>
+        </RelativeLayout>
+         <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageButton
+                android:id="@+id/ib_top_lrc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/top_btn_bg_slector"/>
+            <ImageView
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:src="@mipmap/img_buttom_bt_lrc"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>

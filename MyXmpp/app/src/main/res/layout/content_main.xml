@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.myxmpp.activitys.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end"
+        android:background="@drawable/main_buttom_shape"
+        android:gravity="center">
+
+        <RadioGroup
+            android:id="@+id/rg_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_session"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:drawableTop="@drawable/btn_session_selector"
+                android:text="@string/session" />
+
+            <RadioButton
+                android:id="@+id/rb_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="96dp"
+                android:button="@null"
+                android:drawableTop="@drawable/btn_contacts_selector"
+                android:text="@string/contacts" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_bottom" />
+
+</RelativeLayout>

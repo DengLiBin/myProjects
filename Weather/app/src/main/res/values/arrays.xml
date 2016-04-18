@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="citys">
+        <item>成都</item>
+        <item>自贡</item>
+        <item>攀枝花</item>
+        <item>泸州</item>
+        <item>德阳</item>
+        <item>绵阳</item>
+        <item>广元</item>
+        <item>遂宁</item>
+        <item>内江</item>
+        <item>乐山</item>
+        <item>南充</item>
+        <item>宜宾</item>
+        <item>广安</item>
+        <item>达州</item>
+        <item>眉山</item>
+        <item>雅安</item>
+        <item>巴中</item>
+        <item>资阳</item>
+        <item>西昌</item>
+    </string-array>
+
+
+</resources>

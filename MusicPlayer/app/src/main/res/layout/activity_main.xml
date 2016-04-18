@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img_single_bg"
+    tools:context="com.denglibin.musicplayer.MainActivity">
+
+    <!--1、top-->
+    <include
+        android:id="@+id/top"
+        layout="@layout/included_top" />
+    <!--2、bottom-->
+    <include
+        android:id="@+id/bottom"
+        layout="@layout/included_bottom" />
+    <!--3、center-->
+    <com.denglibin.musicplayer.view.ScrollableViewGroup
+        android:id="@+id/scrollVG"
+        android:layout_below="@id/top"
+        android:layout_above="@id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include layout="@layout/included_page_play"
+            android:id="@+id/play"/>
+        <include layout="@layout/included_page_list"
+            android:id="@+id/list"/>
+        <include layout="@layout/included_page_lrc"
+            android:id="@+id/lrc"/>
+    </com.denglibin.musicplayer.view.ScrollableViewGroup>
+</RelativeLayout>
